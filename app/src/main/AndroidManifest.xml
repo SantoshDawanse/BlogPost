@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PostingActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.Dialog"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog"
+            android:windowSoftInputMode="stateVisible"></activity>
     </application>
 
 </manifest>
