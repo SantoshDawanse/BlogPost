@@ -15,9 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PostingActivity"
+        <activity
+            android:name=".PostingActivity"
             android:theme="@style/Theme.AppCompat.DayNight.Dialog"
-            android:windowSoftInputMode="stateVisible"></activity>
+            android:windowSoftInputMode="stateVisible" />
     </application>
 
 </manifest>

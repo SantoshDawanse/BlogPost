@@ -11,7 +11,7 @@ import android.widget.TextView;
 /**
  * Created by dawn on 8/10/2016.
  */
-public class BlogpostAdapter extends CursorAdapter{
+public class BlogpostAdapter extends CursorAdapter {
     public BlogpostAdapter(Context context, Cursor c) {
         super(context, c, 0);
     }

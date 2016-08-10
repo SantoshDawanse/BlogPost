@@ -12,16 +12,16 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/actionButton"
-        android:padding="10dp"
-        android:src="@drawable/editpost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_alignParentRight="true"
         android:layout_marginBottom="30dp"
-        android:onClick="onClickActionButton"/>
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:onClick="onClickActionButton"
+        android:padding="10dp"
+        android:src="@drawable/editpost" />
 
 </RelativeLayout>

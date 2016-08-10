@@ -10,23 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/etPostArea"
-        android:layout_below="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
         android:hint="@string/write_a_post"
         android:textSize="16sp" />
 
     <Button
         android:id="@+id/btnPost"
-        android:layout_below="@+id/etPostArea"
-        android:layout_centerHorizontal="true"
-        android:text="@string/post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/etPostArea"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
         android:onClick="onClickPost"
-        android:layout_marginBottom="10dp"/>
+        android:text="@string/post" />
 </RelativeLayout>

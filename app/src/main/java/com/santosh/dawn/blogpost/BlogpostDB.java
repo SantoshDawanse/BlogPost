@@ -52,12 +52,12 @@ public class BlogpostDB {
     }
 
     //close a database
-    public void close(){
+    public void close() {
         mDatabase.close();
     }
 
     //inserting data into a table
-    public void insertData(String post){
+    public void insertData(String post) {
         ContentValues cv = new ContentValues();
         cv.put(KEY_DATE, getDate());
         cv.put(KEY_TIME, getTime());

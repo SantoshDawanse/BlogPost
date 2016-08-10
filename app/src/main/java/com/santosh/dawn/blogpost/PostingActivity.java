@@ -31,7 +31,7 @@ public class PostingActivity extends AppCompatActivity {
     public void onClickPost(View view) {
         String post = etPostArea.getText().toString();
 
-        if(!post.equals("")){
+        if (!post.equals("")) {
             try {
                 mBlogpostDB.open();
                 mBlogpostDB.insertData(post);

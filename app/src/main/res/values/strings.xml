@@ -2,4 +2,5 @@
     <string name="app_name">BlogPost</string>
     <string name="write_a_post">Write a post</string>
     <string name="post">Post</string>
+    <string name="front_banner_text">Your blog is empty, write some blogs.</string>
 </resources>

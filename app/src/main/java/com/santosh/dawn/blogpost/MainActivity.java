@@ -8,32 +8,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity{
-
-    private ListView listView;
-
-    private BlogpostDB mBlogpostDB;
-    private BlogpostAdapter mBlogpostAdapter;
-
-    private FloatingActionButton actionButton;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = (ListView) findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.listView);
 
-        mBlogpostDB = new BlogpostDB(this);
-        mBlogpostAdapter = new BlogpostAdapter(this, mBlogpostDB.getAllData());
+        BlogpostDB mBlogpostDB = new BlogpostDB(this);
+        BlogpostAdapter mBlogpostAdapter = new BlogpostAdapter(this, mBlogpostDB.getAllData());
 
-        actionButton = (FloatingActionButton) findViewById(R.id.actionButton);
-
-        listView.setAdapter(mBlogpostAdapter);
-        mBlogpostAdapter.notifyDataSetChanged();
-        mBlogpostDB.close();
-
+        if (listView != null) {
+            listView.setAdapter(mBlogpostAdapter);
+            mBlogpostAdapter.notifyDataSetChanged();
+            mBlogpostDB.close();
+        }
     }
 
     public void onClickActionButton(View view) {
