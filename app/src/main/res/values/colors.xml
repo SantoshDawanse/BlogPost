@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#5f69c6</color>
+
+    <color name="colorDateTime">#5174cc</color>
+    <color name="colorText">#000000</color>
 </resources>

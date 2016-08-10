@@ -1,6 +1,7 @@
 package com.santosh.dawn.blogpost;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,10 +15,8 @@ import java.sql.SQLException;
 public class PostingActivity extends AppCompatActivity {
 
     private EditText etPostArea;
-    private Button btnPost;
 
     private BlogpostDB mBlogpostDB;
-    private BlogpostAdapter mBlogpostAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,10 +24,8 @@ public class PostingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_posting);
 
         etPostArea = (EditText) findViewById(R.id.etPostArea);
-        btnPost = (Button) findViewById(R.id.btnPost);
 
         mBlogpostDB = new BlogpostDB(this);
-        mBlogpostAdapter = new BlogpostAdapter(this, mBlogpostDB.getAllData());
     }
 
     public void onClickPost(View view) {
@@ -47,6 +44,6 @@ public class PostingActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "You haven't written anything!!!", Toast.LENGTH_LONG).show();
         }
-        
+
     }
 }

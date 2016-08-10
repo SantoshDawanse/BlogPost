@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="10dp"
     tools:context="com.santosh.dawn.blogpost.PostingActivity">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/write_a_post"
+        android:text=""
         android:textSize="16sp"/>
 
     <EditText
@@ -18,6 +17,7 @@
         android:layout_below="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/write_a_post"
         android:textSize="16sp"/>
 
     <Button
@@ -27,5 +27,6 @@
         android:text="@string/post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClickPost"/>
+        android:onClick="onClickPost"
+        android:layout_marginBottom="10dp"/>
 </RelativeLayout>
